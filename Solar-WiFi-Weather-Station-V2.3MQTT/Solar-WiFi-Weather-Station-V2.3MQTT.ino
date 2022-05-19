@@ -543,7 +543,7 @@ delay(2000);
   Serial.print("°C; ");
  
   // Get humidity
-  measured_humi = bme.readHumidity()-10;
+  measured_humi = bme.readHumidity()-2;
 //   print on serial monitor
   Serial.print("Humidity: ");
   Serial.print(measured_humi);

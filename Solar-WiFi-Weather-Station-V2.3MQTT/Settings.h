@@ -30,8 +30,8 @@ const char* mqtt_server = "192.168.1.212";      // MQTT Server (broker) address
 
 #define LANGUAGE 'EN'               //check translation.h for available languages. Currently EN/DE/FR/IT/PL/RO/SP/TR/NL/NO
 
-#define TEMP_CORR (+1.2)              //Manual correction of temp sensor (mine reads 1 degree too high)
-#define HUMI_CORR (-23)              // not used anymore in V2.34 (automatically calculated)
+#define TEMP_CORR (+1.366)              //Manual correction of temp sensor (mine reads 1 degree too high)
+//#define HUMI_CORR (-28)              // not used anymore in V2.34 (automatically calculated)
 
 #define ELEVATION (27.7)             //Enter your elevation in m ASL to calculate rel pressure (ASL/QNH) at your place
 
@@ -48,7 +48,7 @@ const char* mqtt_server = "192.168.1.212";      // MQTT Server (broker) address
 #define TZ_SEC          ((TZ)*3600)  // don't change this
 #define DST_SEC         ((DST_MN)*60)// don't change this
 //*************************auto update*****************
-#define VERSION "v22.05.0901"
+#define VERSION "v22.05.01807"
 #define HOST "solarWeather"
 const char* urlBase = "http://192.168.1.212:5000/update";
 
